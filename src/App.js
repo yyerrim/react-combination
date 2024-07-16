@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+
+import FancyBorder from "./components/FancyBorder";
+import Dialog from "./components/Dialog";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Containment : 직접 html 코드를 적어줌 */}
+      <FancyBorder>
+        <h1>제목</h1>
+      </FancyBorder>
+      <FancyBorder color="red">
+        <h1>제목</h1>
+      </FancyBorder>
+
+      {/* Specialization */}
+      <Dialog
+        title="어서오세요"
+        message="우리 사이트에 방문하신 것을 환영합니다." />
     </div>
   );
 }

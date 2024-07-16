@@ -1,0 +1,22 @@
+.FancyBorder {
+    width: 300px;
+    height: 200px;
+    border: 2px solid;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FancyBorder-red {
+    border-color: red;
+}
+
+.FancyBorder-green {
+    border-color: green;
+}
+
+.FancyBorder-blue {
+    border-color: blue;
+}
